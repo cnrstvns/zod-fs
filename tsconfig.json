@@ -7,14 +7,14 @@
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "verbatimModuleSyntax": true,
-    "incremental": true,
     "esModuleInterop": true,
     "module": "ESNext",
-    "moduleResolution": "node",
+    "moduleResolution": "Bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "types": ["node"],
-    "outDir": "dist",
+    "noEmit": true,
+    "allowImportingTsExtensions": true,
     "paths": {
       "@zod-fs/*": ["src/*"]
     },
