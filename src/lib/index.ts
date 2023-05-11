@@ -28,7 +28,7 @@ const getAppPath = (appId: string) => {
     process.env.NODE_ENV === 'production' ? appId : `${appId} (development)`;
 
   if (process.platform === 'win32') {
-    return `${process.env.APPDATA}`;
+    return `${process.env.APPDATA}/${appName}/`;
   }
 
   if (process.platform === 'darwin') {

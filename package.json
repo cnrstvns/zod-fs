@@ -1,6 +1,6 @@
 {
   "name": "zod-fs",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "zod-fs enables developers to access their JSON files safely, powered by zod",
   "main": "dist/index.js",
   "repository": {
