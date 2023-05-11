@@ -140,7 +140,9 @@ const readFile = async <T extends ZodType<any, any>>(
 
     return jsonData as z.infer<T>;
   } catch (err) {
-    return restoreDefaults<T>(filePath, defaultData);
+    await restoreDefaults<T>(filePath, defaultData);
+
+    return defaultData;
   }
 };
 
