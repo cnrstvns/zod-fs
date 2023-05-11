@@ -138,7 +138,7 @@ const readFile = async <T extends ZodType<any, any>>(
 
     schema.parse(jsonData);
 
-    return jsonData as T;
+    return jsonData as z.infer<T>;
   } catch (err) {
     return restoreDefaults<T>(filePath, defaultData);
   }
