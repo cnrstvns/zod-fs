@@ -1,15 +1,19 @@
 {
   "name": "zod-fs",
   "version": "1.0.0",
-  "description": "",
+  "description": "zod-fs enables developers to access their JSON files safely, powered by zod",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "test": "tsup test/index.ts && node dist/index.js",
     "prepublish": "tsc"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "zod",
+    "fs",
+    "json"
+  ],
+  "author": "Connor Stevens",
   "license": "MIT",
   "devDependencies": {
     "@types/fs-extra": "^11.0.1",
