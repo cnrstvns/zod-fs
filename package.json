@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "zod-fs enables developers to access their JSON files safely, powered by zod",
   "main": "dist/index.js",
+  "repository": {
+    "url": "https://github.com/cnrstvns/zod-fs"
+  },
   "types": "dist/index.d.ts",
   "scripts": {
     "test": "tsup test/index.ts && node dist/index.js",
