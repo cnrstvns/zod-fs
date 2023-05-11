@@ -7,7 +7,6 @@
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "verbatimModuleSyntax": true,
-    "noEmit": true,
     "incremental": true,
     "esModuleInterop": true,
     "module": "ESNext",
@@ -19,7 +18,8 @@
     "paths": {
       "@zod-fs/*": ["src/*"]
     },
-    "baseUrl": "."
+    "baseUrl": ".",
+    "declaration": true
   },
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", "test"]
 }

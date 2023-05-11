@@ -3,12 +3,12 @@ import { type ZodType, z } from 'zod';
 import * as fs from 'fs-extra';
 import { deepMerge } from './deep-merge';
 
-type JSONOptions = {
+export type JSONOptions = {
   replacer?: (string | number)[] | null | undefined;
   space?: string | number | undefined;
 };
 
-type CreateFileHelperOptions<T extends ZodType<any, any>> = {
+export type CreateFileHelperOptions<T extends ZodType<any, any>> = {
   fileName: string;
   schema: T;
   defaultValues: z.infer<T>;
